@@ -6,13 +6,16 @@ import (
 )
 
 type PetRepository struct {
-
 }
 
-func NewPetRepository () interfaces.PetRepository{
+func NewPetRepository() interfaces.PetRepository {
 	return &PetRepository{}
 }
 
 func (pr *PetRepository) Save(entity.Pet) error {
+	return nil
+}
+
+func (pr *PetRepository) Update(entity.Pet) error {
 	return nil
 }
